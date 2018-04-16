@@ -1,14 +1,38 @@
-// var mystring1 = "hello".length;
-// document.write(mystring1);
+function count_f() {
 
-var i=0;
-while (i<=20) {
-    document.write(i + "<br />");
-    i+=2;
+
+function randomRange(myMin, myMax) {
+      return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
 }
 
-/* var i = 0;
-for (; i <= 10; ) {
-    document.write(i+ "<br />");
-    i+=2;
-}*/
+var myRandom = randomRange(0, 100);
+var secondRandom = randomRange(0, 100);
+var a = myRandom+'+'+secondRandom;
+var c="";
+var expr="aa";
+document.getElementById('target').innerHTML = a;
+document.getElementById('result').innerHTML = c;
+document.getElementById('expression').value = "";
+expression.className  = "result2";
+next.innerHTML = "Next";
+
+
+expression.onblur = function() {
+  var b=myRandom+secondRandom;
+
+  var expr = document.getElementById('expression').value;
+  if (expr==b) {
+   expression.className  = "result";
+    result.innerHTML = 'Yes, result is: '+b
+  }
+  else{
+    this.className = "result1";
+    result.innerHTML = 'No, result is: '+b
+
+  }
+};
+
+
+}
+
+document.getElementById('next').addEventListener('click', count_f);
