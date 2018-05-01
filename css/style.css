@@ -6,7 +6,7 @@
 
 .count-box{
     display:inline-block;
-    padding-top: 160px;
+    padding-top: 50px;
     font-size: 24px;
 }
 
@@ -15,3 +15,4 @@
 .result1 { background-color: red; }
 
 .result2 { background-color: initial;}
+
