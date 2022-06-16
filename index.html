@@ -12,7 +12,33 @@
 <body>
     <div class="container">
         <div class="count-box">
-            <form class="selection" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div id="score"></div>
+            <div>Count: <span id="target"></span></div>
+            <form onsubmit="check(); return false">
+                <input id="expression" required placeholder="" type="tel">
+                <button id="next" type="button">Start</button>
+                <button id="checkb" type="submit">check</button>
+            </form>
+            <hr>
+            <div class="hint" id="hint">Press Start button</div>
+            <hr>
+            <form class="selection">
                 <div class="action-group">
                     <p>select action:</p>
                     <p><input name="action" id="plus" type="radio" value="+" checked> + </p>
@@ -27,16 +53,7 @@
                     <p><input name="difficult" id="hundreds" type="radio" value="100"> 100 </p>
                 </div>
             </form>
-            <hr>
-            <div id="score"></div>
-            <div>Count: <span id="target"></span></div>
-            <form onsubmit="check(); return false">
-                <input id="expression" required placeholder="" type="tel">
-                <button id="next" type="button">Start</button>
-                <button id="checkb" type="submit">check</button>
-            </form>
-            <hr>
-            <div class="hint" id="hint">Press Start button</div>
+
         </div>
     </div>
     <script type="text/javascript" src="js/polygon.js"></script>
